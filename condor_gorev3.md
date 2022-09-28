@@ -20,38 +20,52 @@ Gerekli paketler: git, npm, yarn, node
 
 Ilk önce varsa nodejs i kaldiriyoruz, bize lazim olan nodejs version 16
 
+```bash
 root@vmd97563:\~# sudo apt remove nodejs
+```
 
 Nodejs 16 kurmak icin su adimlari izliyoruz:
 
+```bash
 curl -s https://deb.nodesource.com/setup_16.x \| sudo bash
+```
 
 bu sekilde bir ekran cikacak:
 ![](media/image1.png){width="6.268055555555556in" height="4.75in"}
 
 bu komutla kurulum yapiyoruz:
 
+```bash
 sudo apt install nodejs -y
+```
 
 kurduktan sonra versiyon kontrolü
 
-node -v\
+```bash
+node -v
 v16.17.1
+```
 
 Daha sonra gerekli paketleri kuruyoruz:
 
+```bash
 sudo apt-get install git
 
 sudo npm i -g yarn
+```
 
 Install:
 
-cd yazip entere basiyoruz
+```bash
+cd 
+```
+yazip entere basiyoruz
 
 Surdaki repositoriyi klonluyoruz:
 
-git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git
-challenge-0-simple-nft
+```bash
+git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git challenge-0-simple-nft
+```
 
 ![](media/image2.png){width="6.268055555555556in" height="0.75625in"}
 
