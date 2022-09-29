@@ -31,7 +31,7 @@ curl -s https://deb.nodesource.com/setup_16.x \| sudo bash
 ```
 
 bu sekilde bir ekran cikacak:
-![](media/image1.png){width="6.268055555555556in" height="4.75in"}
+![image](https://user-images.githubusercontent.com/62426828/193068129-614fe613-5bca-43c5-a7d4-8a7d4f638a81.png)
 
 bu komutla kurulum yapiyoruz:
 
@@ -67,14 +67,13 @@ Surdaki repositoriyi klonluyoruz:
 git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git challenge-0-simple-nft
 ```
 
-![](media/image2.png){width="6.268055555555556in" height="0.75625in"}
+![image](https://user-images.githubusercontent.com/62426828/193068307-42b096aa-f428-4921-8586-d38057b68587.png)
 
 Daha sonra 2 tane daha putty penceresi aciyoruz, ekranin üstünde farenin
 sag tusuna tiklayip ayni baglanti icinde yeni pencereler aciyoruz,
 toplam 3 tane olacak:
 
-![](media/image3.png){width="6.268055555555556in"
-height="4.855555555555555in"}
+![image](https://user-images.githubusercontent.com/62426828/193068369-0b3c306c-d813-45af-adf3-b562e7c450fa.png)
 
 Ilk pencerede su komutlari calistiriyoruz:
 
@@ -89,8 +88,7 @@ yarn chain
 ```
 
 ekran bu sekilde kalacak sorun yok:\
-![](media/image4.png){width="6.268055555555556in"
-height="1.7569444444444444in"}
+![image](https://user-images.githubusercontent.com/62426828/193068494-b5fad8a0-0032-448d-9c3d-7355fac21ea3.png)
 
 Ikinci pencerede su komutlari calistiriyoruz:
 
@@ -101,8 +99,7 @@ yarn start
 ```
 
 bu sekilde bir ekranda kalacak:\
-![](media/image5.png){width="6.268055555555556in"
-height="1.2520833333333334in"}
+![image](https://user-images.githubusercontent.com/62426828/193068554-1244020b-6bbf-4ce8-8f24-3942addcc2e4.png)
 
 Son olarak ücüncü pencerede bu komutlari calistiriyoruz:
 
@@ -118,8 +115,7 @@ Bir internet browserden eger acilmadiysa bu sayfayi aciyoruz:\
 
 Bu sekilde bir ekran gelecek:
 
-![](media/image6.png){width="6.268055555555556in"
-height="5.031944444444444in"}
+![image](https://user-images.githubusercontent.com/62426828/193068610-6c0a2751-b06b-452b-8b20-54241d82f555.png)
 
 Ilk adimlari basardiysak devam ediyoruz.
 
@@ -128,8 +124,7 @@ Ilk adimlari basardiysak devam ediyoruz.
 Bu adimda kullanmak icin bize biraz token lazim onu da sayfadaki faucet
 tusuna basarak aliyoruz:
 
-![](media/image7.png){width="3.979722222222222in"
-height="1.4377001312335957in"}
+![image](https://user-images.githubusercontent.com/62426828/193068682-f9a47383-0a1d-431c-8dce-290ec17b57d4.png)
 
 Daha önceden connect tusuna basip mm cüzdan bagladiysaniz baglantiyi
 kesin öncelikle.
@@ -148,8 +143,7 @@ Bunun icin ilk önce ana sayfadaki cüzdan adresini kopyaliyoruz ( mesela
 0xc7cE nin yanindaki kopyala ikonuna tiklayip hafizaya aliyoruz.) Daha
 sonrada gizli sekmedeki cüzdan ikonuna tiklayip aciyoruz.
 
-![](media/image8.png){width="5.427841207349081in"
-height="2.864983595800525in"}
+![image](https://user-images.githubusercontent.com/62426828/193068736-72657d61-153e-46e2-ba49-b20af3faef09.png)
 
 Bu sekilde gerekli yerleri doldurup tokenleri yolluyoruz. Bu islemi
 birkac kez yapabilirsiniz. Gizli sekme her yeni acildiginda farkli bir
@@ -161,14 +155,12 @@ göreceksiniz.
 Burda sayfadaki "Mint NFT" yazan yere tiklayarak birkac tane nft
 mintliyoruz.
 
-![](media/image9.png){width="6.268055555555556in"
-height="7.259027777777778in"}
+![image](https://user-images.githubusercontent.com/62426828/193068788-92ea029c-5aaf-4cd1-a745-4088f4555977.png)
 
 Yeni bir gizli sekme acip ordan bir tane nft aliyoruz ve bunu ana
 cüzdana yolluyoruz.
 
-![](media/image10.png){width="6.268055555555556in"
-height="2.8270833333333334in"}
+![image](https://user-images.githubusercontent.com/62426828/193068874-451b761d-5ef3-40da-90fd-0cca6ab6ca92.png)
 
 **Checkpoint 3 Deploy:**
 
@@ -181,14 +173,12 @@ nano packages/hardhat/hardhat.config.js
 diyerek bu dosyayi aciyoruz.
 
 
-![](media/image11.png){width="6.268055555555556in"
-height="4.013194444444444in"}
+![image](https://user-images.githubusercontent.com/62426828/193068964-a1a8eda0-550d-42e1-a4c1-527360af2578.png)
 
 Burdaki ```bash defaultNetwork = "localhost" ``` olan kismi "goerli" olarak
 degistiriyoruz.
 
-![](media/image12.png){width="4.688153980752406in"
-height="0.35421587926509185in"}
+![image](https://user-images.githubusercontent.com/62426828/193069068-ac97d342-c416-4ca5-a6f4-5190ebc3a5de.png)
 
 Bu sekilde gözükmesi lazim.
 
@@ -200,7 +190,7 @@ Su komutla yeni bir adres olusturuyoruz:
 yarn generate
 ```
 
-![](media/image13.png){width="6.268055555555556in" height="1.1in"}
+![image](https://user-images.githubusercontent.com/62426828/193069155-60a8e324-a12d-4045-b806-af5390ea160b.png)
 
 Bu adresi bir yere kaydedin, metamsktan buraya token yollayacagiz.
 
@@ -210,19 +200,16 @@ yarn account
 
 yazarak bu cüzdan hakkinda bilgileri ve hesap durumunu görüntülüyoruz.
 
-![](media/image14.png){width="6.268055555555556in"
-height="2.9451388888888888in"}
+![image](https://user-images.githubusercontent.com/62426828/193069232-da3c4192-2d80-4f74-88ea-2726368bcff2.png)
 
 Goerli tesnet faucetten biraz token alip bu adrese yolluyoruz.
 
-![](media/image15.png){width="5.167387357830271in"
-height="8.407423447069116in"}
+![image](https://user-images.githubusercontent.com/62426828/193069301-8c45d0d6-8ec0-4800-89ad-5dc4ea863d98.png)
 
 Daha sonra tekrardan ```bash yarn account ``` komutu ile cüzdanda gelip gelmedigini
 görebiliriz.
 
-![](media/image16.png){width="4.386029090113736in"
-height="0.5938331146106737in"}
+![image](https://user-images.githubusercontent.com/62426828/193069351-385f3533-bfbb-4c72-ab03-6d7d6545db70.png)
 
 Token geldikten sonra 3. Acik olan putty penceresinden su komutu
 calistiriyoruz.
@@ -233,8 +220,7 @@ yarn deploy
 
 Bu ekranda bazi tx islemleri görmemiz lazim:
 
-![](media/image17.png){width="6.268055555555556in"
-height="1.3583333333333334in"}
+![image](https://user-images.githubusercontent.com/62426828/193069390-ec9d8bc2-6706-4634-9e85-0180dfc19482.png)
 
 **Checkpoint 4 Gönderim:**
 
@@ -249,12 +235,11 @@ Burda asagi dogru inip bu satiri buluyoruz: "const targetNetwork =
 NETWORKS.localhost; // \<\-\-\-\-\-\-- select your target frontend
 network (localhos\>" Asagi Yukari 56. satirda olacak.
 
-![](media/image18.png){width="6.268055555555556in" height="4.01875in"}
+![image](https://user-images.githubusercontent.com/62426828/193069460-36028887-1870-4cb6-8533-a49639390ca3.png)
 
 goerli olarak degistirip, kaydedip cikiyoruz.
 
-![](media/image19.png){width="4.2714293525809275in"
-height="0.44797900262467194in"}
+![image](https://user-images.githubusercontent.com/62426828/193069514-944c7c19-c35b-4e85-bf71-f95e085eddba.png)
 
 ```bash 
 yarn deploy 
@@ -262,22 +247,19 @@ yarn deploy
 yapiyoruz ve daha sonra <http://localhost:3000/> sayfasini
 yeniden yüklüyoruz. Bu asamada goerli görmemiz lazim:
 
-![](media/image20.png){width="4.302683727034121in"
-height="0.9167946194225722in"}
+![image](https://user-images.githubusercontent.com/62426828/193069576-d56e033f-70da-43a7-8969-30ba29f52380.png)
 
 Connect tusuna basip Mmask ile baglaniyoruz ve MM yi goerli tesnet agina
 aliyoruz.
 
 Orda bakiyeyi görebilmemiz lazim.
 
-![](media/image21.png){width="4.896516841644795in"
-height="0.9897211286089239in"}
+![image](https://user-images.githubusercontent.com/62426828/193069621-c26b38c4-9ece-4b82-92be-95d0e37a5668.png)
 
 Sayfadan Mint NFT yapiyoruz ve cüzdan onayi vererek bir tane nft
 aliyoruz.
 
-![](media/image22.png){width="6.268055555555556in"
-height="2.7243055555555555in"}
+![image](https://user-images.githubusercontent.com/62426828/193069669-e84abc68-11e1-493c-af90-57ba7f9380a7.png)
 
 Burda aldigimiz nft artik bizim goerli cuzdana gelmis oldu. Daha
 öncekiler gecici cüzdandaydi ve silinecekler bu nft kalacaktir.
@@ -292,10 +274,9 @@ komutu ile sayfayi hazirliyoruz. Islem bittikten sonra
 yarn surge
 ```
 
-Ile sayfamizi internete yüklüyoruz.
+komutu ile sayfamizi internete yüklüyoruz.
 
-![](media/image23.png){width="5.4382589676290465in"
-height="1.7085717410323709in"}
+![image](https://user-images.githubusercontent.com/62426828/193069718-2c98d997-a684-4805-bf1e-9da2d010ba19.png)
 
 Burda size domain icin bir öneri sunuyor, isterseniz degistirip
 istediginiz bir isim verebilirsiniz. Surge üyeliginiz yoksa hemen bir
@@ -310,13 +291,11 @@ yarn test
 
 ile sistemi test ediyoruz
 
-![](media/image24.png){width="6.268055555555556in"
-height="4.018055555555556in"}
+![image](https://user-images.githubusercontent.com/62426828/193069809-045cfaa5-100e-48e4-8d8f-66b2283a2b24.png)
 
 Ayrica domain kisminda verilen adresi web tarayicida acip bakiyoruz.
 
-![](media/image25.png){width="6.268055555555556in"
-height="2.6152777777777776in"}
+![image](https://user-images.githubusercontent.com/62426828/193069842-55ee8e0e-774f-46b1-9107-a604ac2aafca.png)
 
 **Checkpoint 5 Kontrat dogrulama:**
 
@@ -325,8 +304,7 @@ nano packages/hardhat/package.json
   ```
 dosyasini acip kendimizin etherscan keyini koyuyoruz.
 
-![](media/image26.png){width="6.268055555555556in"
-height="1.0541666666666667in"}
+![image](https://user-images.githubusercontent.com/62426828/193069887-42f23b78-4d8f-4aa3-8bf6-2c656995b1ff.png)
 
 Key almak icin <https://etherscan.io/myapikey> bu sayfaya gidip login
 oluyoruz ve ordan adresimizi aliyoruz.
@@ -334,17 +312,15 @@ oluyoruz ve ordan adresimizi aliyoruz.
 Daha sonra su komutla islemi dogruluyoruz:
 
 ```bash
-yarn verify \--network goerli
+yarn verify --network goerli
 ```
 
-![](media/image27.png){width="6.268055555555556in"
-height="0.8930555555555556in"}
+![image](https://user-images.githubusercontent.com/62426828/193069980-767e9773-febf-40fe-9c80-ee7801d164c8.png)
 
 Burda zaten dogrulanmis diyor, normaldir. Cikan adresi goerli etherscan
-da control ediyoruz.
+da kontrol ediyoruz.
 
-![](media/image28.png){width="5.104878608923885in"
-height="7.428120078740157in"}
+![image](https://user-images.githubusercontent.com/62426828/193070048-b9a61b59-e713-4c23-a472-4123ac8a79f5.png)
 
 Daha sonra\
 <https://speedrunethereum.com/challenge/simple-nft-example>
@@ -354,8 +330,7 @@ Sayfasina girip alttaki "Submit challenge" tusuna tikliyoruz.
 Orda istenen bilgileri giriyoruz. Surge sayfa adresi ve az önceki goerli
 etherscan adresini verecegiz.
 
-![](media/image29.png){width="5.3340780839895015in"
-height="3.698432852143482in"}
+![image](https://user-images.githubusercontent.com/62426828/193070160-410ccacd-6f78-4309-bc92-696ab0eb1a45.png)
 
 Submit tusuna basiyoruz, kontrolu bekliyoruz. Sayfada üyelik yoksa
 cüzdanimizla üye oluyoruz ve submit sonrasinda cüzdanla onay veriyoruz.
@@ -363,8 +338,7 @@ cüzdanimizla üye oluyoruz ve submit sonrasinda cüzdanla onay veriyoruz.
 Islem tamamsa sayfanin sag üst tarafinda kendi cüzdanimiza tiklayip
 sayfamiza giriyoruz orda status accepted olmasi lazim.
 
-![](media/image30.png){width="6.268055555555556in"
-height="1.554861111111111in"}
+![image](https://user-images.githubusercontent.com/62426828/193070193-619a5f79-4ff4-4004-b13d-ebb70a047bd5.png)
 
 Bu islemden sonra telegram kanalina giriyoruz:
 
