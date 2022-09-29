@@ -78,6 +78,7 @@ height="4.855555555555555in"}
 
 Ilk pencerede su komutlari calistiriyoruz:
 
+```bash
 cd challenge-0-simple-nft
 
 git checkout challenge-0-simple-nft
@@ -85,6 +86,7 @@ git checkout challenge-0-simple-nft
 yarn install
 
 yarn chain
+```
 
 ekran bu sekilde kalacak sorun yok:\
 ![](media/image4.png){width="6.268055555555556in"
@@ -92,9 +94,11 @@ height="1.7569444444444444in"}
 
 Ikinci pencerede su komutlari calistiriyoruz:
 
+```bash
 cd challenge-0-simple-nft
 
 yarn start
+```
 
 bu sekilde bir ekranda kalacak:\
 ![](media/image5.png){width="6.268055555555556in"
@@ -102,9 +106,11 @@ height="1.2520833333333334in"}
 
 Son olarak ücüncü pencerede bu komutlari calistiriyoruz:
 
+```bash
 cd challenge-0-simple-nft
 
 yarn deploy
+```
 
 Bir internet browserden eger acilmadiysa bu sayfayi aciyoruz:\
 \
@@ -169,12 +175,16 @@ height="2.8270833333333334in"}
 Bu asamada kodlarda bazi degisikler yapacagiz ve cüzdanimizla bu web
 sayfasina baglanacagiz.
 
-nano packages/hardhat/hardhat.config.js diyerek bu dosyayi aciyoruz.
+```bash
+nano packages/hardhat/hardhat.config.js
+```
+diyerek bu dosyayi aciyoruz.
+
 
 ![](media/image11.png){width="6.268055555555556in"
 height="4.013194444444444in"}
 
-Burdaki defaultNetwork = "localhost" olan kismi "goerli" olarak
+Burdaki ```bash defaultNetwork = "localhost" ``` olan kismi "goerli" olarak
 degistiriyoruz.
 
 ![](media/image12.png){width="4.688153980752406in"
@@ -186,13 +196,17 @@ Daha sonra Ctrl+O ve Ctrl+X tusuna basarak kaydedip cikiyoruz.
 
 Su komutla yeni bir adres olusturuyoruz:
 
+```bash
 yarn generate
+```
 
 ![](media/image13.png){width="6.268055555555556in" height="1.1in"}
 
 Bu adresi bir yere kaydedin, metamsktan buraya token yollayacagiz.
 
+```bash
 yarn account
+```
 
 yazarak bu cüzdan hakkinda bilgileri ve hesap durumunu görüntülüyoruz.
 
@@ -204,7 +218,7 @@ Goerli tesnet faucetten biraz token alip bu adrese yolluyoruz.
 ![](media/image15.png){width="5.167387357830271in"
 height="8.407423447069116in"}
 
-Daha sonra tekrardan yarn account komutu ile cüzdanda gelip gelmedigini
+Daha sonra tekrardan ```bash yarn account ``` komutu ile cüzdanda gelip gelmedigini
 görebiliriz.
 
 ![](media/image16.png){width="4.386029090113736in"
@@ -213,7 +227,9 @@ height="0.5938331146106737in"}
 Token geldikten sonra 3. Acik olan putty penceresinden su komutu
 calistiriyoruz.
 
+```bash
 yarn deploy
+```
 
 Bu ekranda bazi tx islemleri görmemiz lazim:
 
@@ -225,7 +241,9 @@ height="1.3583333333333334in"}
 Bu asamada web sayfamizi hazirlayip internette bir yere yükleyecegiz.
 Ilk önce Sayfanin standart agini degistiriyoruz:
 
+```bash
 nano packages/react-app/src/App.jsx
+```
 
 Burda asagi dogru inip bu satiri buluyoruz: "const targetNetwork =
 NETWORKS.localhost; // \<\-\-\-\-\-\-- select your target frontend
@@ -238,7 +256,10 @@ goerli olarak degistirip, kaydedip cikiyoruz.
 ![](media/image19.png){width="4.2714293525809275in"
 height="0.44797900262467194in"}
 
-yarn deploy yapiyoruz ve daha sonra <http://localhost:3000/> sayfasini
+```bash 
+yarn deploy 
+``` 
+yapiyoruz ve daha sonra <http://localhost:3000/> sayfasini
 yeniden yüklüyoruz. Bu asamada goerli görmemiz lazim:
 
 ![](media/image20.png){width="4.302683727034121in"
@@ -261,11 +282,15 @@ height="2.7243055555555555in"}
 Burda aldigimiz nft artik bizim goerli cuzdana gelmis oldu. Daha
 öncekiler gecici cüzdandaydi ve silinecekler bu nft kalacaktir.
 
+```bash
 yarn build
+```
 
 komutu ile sayfayi hazirliyoruz. Islem bittikten sonra
 
+```bash
 yarn surge
+```
 
 Ile sayfamizi internete yüklüyoruz.
 
@@ -279,7 +304,9 @@ otomatik isliyor.
 
 Hata vermeden yüklediyse
 
+```bash
 yarn test
+```
 
 ile sistemi test ediyoruz
 
@@ -293,8 +320,10 @@ height="2.6152777777777776in"}
 
 **Checkpoint 5 Kontrat dogrulama:**
 
-nano packages/hardhat/package.json dosyasini acip kendimizin etherscan
-keyini koyuyoruz.
+```bash
+nano packages/hardhat/package.json
+  ```
+dosyasini acip kendimizin etherscan keyini koyuyoruz.
 
 ![](media/image26.png){width="6.268055555555556in"
 height="1.0541666666666667in"}
@@ -304,7 +333,9 @@ oluyoruz ve ordan adresimizi aliyoruz.
 
 Daha sonra su komutla islemi dogruluyoruz:
 
+```bash
 yarn verify \--network goerli
+```
 
 ![](media/image27.png){width="6.268055555555556in"
 height="0.8930555555555556in"}
